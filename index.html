@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flight</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+
+    <!-- Start Header Section -->
+    <div class="sky">
+      <img src="./images/header/plane.png" alt="fly-plane" />
+    </div>
+    <header>
+      <div class="container">
+        <nav>
+          <h1><i class="fa-solid fa-plane-up"></i> Flight</h1>
+          <div class="menu-bar open" id="menu-btn">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <ul id="nav-links" class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#packages">Package</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#faq">Faq</a></li>
+          </ul>
+          <ul class="configuration">
+            <li>
+              <a href="">Login</a>
+            </li>
+            <li>
+              <a href="">Register</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="content">
+          <h1>Book Your Flight Today</h1>
+          <p>
+            Discover the world's most beautiful destinations, book your flight
+            today and experience the magic of flight.
+          </p>
+          <a href="#" class="btn"
+            ><i class="fa-solid fa-plane-up"></i> Book Now</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <!-- End Header Section -->
+
+    <!-- Start Form Section -->
+
+    <div class="container">
+      <div class="bottom">
+        <form action="#">
+          <div class="form-top">
+            <select>
+              <option value="">Round Trip</option>
+              <option value="">One Way</option>
+              <option value="">Multi-City</option>
+              <option value="">Flexible</option>
+            </select>
+            <select>
+              <option value="">Adult</option>
+              <option value="">Child</option>
+            </select>
+            <select id="class" name="class" required>
+              <option value="">Economy</option>
+              <option value="">Business</option>
+              <option value="">First Class</option>
+            </select>
+          </div>
+          <div class="form-bottom">
+            <div class="form-group">
+              <label for="from">From:</label>
+              <input type="text" id="from" name="from" required />
+            </div>
+            <div class="form-group">
+              <label for="to">To:</label>
+              <input type="text" id="to" name="to" required />
+            </div>
+            <div class="form-group">
+              <label for="date">Date:</label>
+              <input type="date" id="date" name="date" required />
+            </div>
+            <div class="form-group">
+              <label for="passengers">Passengers:</label>
+              <input
+                type="number"
+                id="passengers"
+                name="passengers"
+                min="1"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input type="submit" value="Find Flight" class="btn" />
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- End Form Section -->
+
+    <!-- Start About Section -->
+
+    <div class="container">
+      <div class="about" id="about">
+        <div class="about-content">
+          <h2 class="heading-2">About Flight</h2>
+          <p>
+            Flight is a journey that brings people together. From the moment you
+            open your eyes to the moment you leave home, it's a beautiful
+            experience that takes you on a journey of wonder. Our mission is to
+            make traveling as easy and convenient as possible.
+          </p>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+        <div class="about-images">
+          <img src="./images/about/about-plane-1.jpg" alt="plane" />
+          <img src="./images/about/about-plane-2.jpg" alt="plane" />
+          <img src="./images/about/about-plane-3.jpg" alt="plane" />
+        </div>
+      </div>
+    </div>
+
+    <!-- End About Section -->
+
+    <!-- Start Services Section -->
+
+    <div class="container">
+      <div class="services" id="services">
+        <h2 class="heading-2">Services</h2>
+        <div class="service-items">
+          <div class="service-item">
+            <i class="fa-regular fa-calendar-check"></i>
+            <h3 class="heading-3">Flight Booking</h3>
+            <p class="text">
+              Book your flights with ease and save time by using our convenient
+              booking system.
+            </p>
+          </div>
+          <div class="service-item">
+            <i class="fa-solid fa-route"></i>
+            <h3 class="heading-3">Flight Tracking</h3>
+            <p class="text">
+              Keep track of your flights using our flight tracking system to
+              avoid missing your connection.
+            </p>
+          </div>
+          <div class="service-item">
+            <i class="fa-solid fa-shield"></i>
+            <h3 class="heading-3">Flight Insurance</h3>
+            <p class="text">
+              Get the best insurance coverage for your flights with our flight
+              insurance.
+            </p>
+          </div>
+          <div class="service-item">
+            <i class="fa-solid fa-phone-volume"></i>
+            <h3 class="heading-3">Flight Support</h3>
+            <p class="text">
+              Get 24/7 flight support and customer service to help you with your
+              travel needs.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Services Section -->
+
+    <!-- Start Popular Destination Section -->
+
+    <div class="container">
+      <div class="popular-destination">
+        <h2 class="heading-2">Popular Destination</h2>
+        <div class="destination-items">
+          <div class="destination-item">
+            <img src="./images/destination/new-york.jpg" alt="destination" />
+            <h3 class="heading-3">New York</h3>
+            <p class="text">
+              A vibrant city known for its skyscrapers, famous landmarks, and
+              incredible food.
+            </p>
+          </div>
+          <div class="destination-item">
+            <img src="./images/destination/paris.jpg" alt="destination" />
+            <h3 class="heading-3">Paris</h3>
+            <p class="text">A city known for its luxury, art, and architecture.</p>
+          </div>
+          <div class="destination-item">
+            <img src="./images/destination/london.jpg" alt="destination" />
+            <h3 class="heading-3">London</h3>
+            <p class="text">
+              A city known for its beautiful architecture, famous landmarks, and
+              incredible food.
+            </p>
+          </div>
+          <div class="destination-item">
+            <img src="./images/destination/tokyo.jpg" alt="destination" />
+            <h3 class="heading-3">Tokyo</h3>
+            <p class="text">
+              A city known for its beautiful architecture, famous landmarks, and
+              incredible food.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Popular Destination Section -->
+
+    <!-- Start packages Section -->
+
+    <div class="container">
+      <div class="packages" id="packages">
+        <h2 class="heading-2">Packages</h2>
+        <div class="package-items">
+          <div class="package-item">
+            <h3 class="heading-3">Standard</h3>
+            <p class="text">
+              A comfortable and comfortable flight with a luxurious cabin, free
+              on-board snacks, and free Wi-Fi.
+            </p>
+            <a href="#" class="btn">Book Now</a>
+          </div>
+          <div class="package-item">
+            <h3 class="heading-3">Premium</h3>
+            <p class="text">
+              A luxurious and premium flight with a premium cabin, free on-board
+              snacks, and free Wi-Fi.
+            </p>
+            <a href="#" class="btn">Book Now</a>
+          </div>
+          <div class="package-item">
+            <h3 class="heading-3">Business</h3>
+            <p class="text">
+              A business-class flight with a business-class cabin, free on-board
+              snacks, and free Wi-Fi.
+            </p>
+            <a href="#" class="btn">Book Now</a>
+          </div>
+          <div class="package-item">
+            <h3 class="heading-3">First Class</h3>
+            <p class="text">
+              A first-class flight with a first-class cabin, free on-board
+              snacks, and free Wi-Fi.
+            </p>
+            <a href="#" class="btn">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Packages Section -->
+
+    <!-- Start Testimonials Section -->
+
+    <div class="container">
+      <div class="testimonials">
+        <h2 class="heading-2">Testimonials</h2>
+        <div class="testimonial-items">
+          <div class="testimonial-item">
+            <div class="testimonial-image">
+              <img
+                src="./images/testimonials/client-1.jpg"
+                alt="testimonial"
+              />
+            </div>
+            <div class="testimonial-content">
+              <p class="text">
+                "Flight has always been my favorite form of transportation. With
+                Flight, I can travel anywhere I want and at any time I want,
+                without worrying about traffic or long lines. It's a dream come
+                true for me."
+              </p>
+              <h4 class="heading-4">John Doe</h4>
+            </div>
+          </div>
+          <div class="testimonial-item">
+            <div class="testimonial-image">
+              <img
+              src="./images/testimonials/client-2.jpg"
+              alt="testimonial"
+            />
+            </div>
+            <div class="testimonial-content">
+              <p class="text">
+                "I absolutely love using Flight. It's not just about the flight,
+                but also the experience I have with my family and friends. I've
+                been using Flight for over 5 years now and I can't imagine going
+                back."
+              </p>
+              <h4 class="heading-4">Jane Smith</h4>
+            </div>
+          </div>
+          <div class="testimonial-item">
+            <div class="testimonial-image">
+              <img
+              src="./images/testimonials/client-3.jpg"
+              alt="testimonial"
+            />
+            </div>
+            <div class="testimonial-content">
+              <p class="text">
+                "I've always loved traveling, and Flight has been an absolute
+                pleasure for me. I've been using Flight for over 5 years now and I
+                can't imagine going back."
+              </p>
+              <h4 class="heading-4">Mike Johnson</h4>
+            </div>
+          </div>
+          <div class="testimonial-item">
+            <div class="testimonial-image">
+              <img
+              src="./images/testimonials/client-4.jpg"
+              alt="testimonial"/>
+            </div>
+            <div class="testimonial-content">
+              <p class="text">
+                "Flight has always been my favorite form of transportation. With
+                Flight, I can travel anywhere I want and at any time I want,
+                without worrying about traffic or long lines. It's a dream come
+                true for me."
+              </p>
+              <h4 class="heading-4">Emily Davis</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Testimonials Section -->
+
+    <!-- Start Faq Section -->
+
+    <div class="container">
+      <div class="faq" id="faq">
+        <h2 class="heading-2">FAQ</h2>
+        <div class="faq-items">
+          <div class="faq-item">
+            .
+            <h3>
+              What is a flight booking system?<span
+                class="opener"
+                onclick="faq(this)"
+                >+</span
+              >
+            </h3>
+            <p>
+              A flight booking system is a system that allows users to book
+              flights easily and quickly.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h3 class="question">
+              How do I book a flight?<span class="opener" onclick="faq(this)"
+                >+</span
+              >
+            </h3>
+            <p class="answer">
+              To book a flight, you can use our convenient booking system,
+              search for the desired flight, and select your preferred options.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h3 class="question">
+              What is flight insurance?<span class="opener" onclick="faq(this)"
+                >+</span
+              >
+            </h3>
+            <p class="answer">
+              Flight insurance is a comprehensive coverage that provides
+              protection against financial loss or damage during a flight.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Faq Section -->
+
+    <!-- Start Contact Section -->
+
+    <div class="container">
+      <div class="contact" id="contact">
+        <h2 class="heading-2">Contact</h2>
+        <div class="contact-form">
+          <form action="">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <div class="form-group">
+              <input type="submit" value="Send" class="btn" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Contact Section -->
+
+    <!-- Start Footer -->
+
+    <footer>
+      <p>&copy; Flight 2022. All rights reserved.</p>
+      <div class="footer-bottom">
+        <ul>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+        <div class="social-media">
+          <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- End Footer -->
+
+    <script src="./script.js"></script>
+  </body>
+</html>
