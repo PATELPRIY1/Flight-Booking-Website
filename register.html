@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flight | Register</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="register-bg">
+    <div class="register-form">
+      <form action="register.php" method="post">
+        <h2 class="heading-2">Flight Registration</h2>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter Your Name"
+          required
+        />
+
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter Your Email"
+          required
+        />
+
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="Enter Your Phone number"
+          required
+        />
+
+        <input type="password" id="password" name="password" placeholder="Enter Your Password" readonly />
+    
+        <input type="confirm-password" id="confirmationPassword" name="confirmationPassword" placeholder="Enter Your Confirmation Password">
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required />
+
+        <button type="submit"> Submit </button>
+        <p>Already have an Account? <a href="./login.html">Login</a></p>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
