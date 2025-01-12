@@ -73,7 +73,7 @@ ul {
   color: var(--text-dark-color);
 }
 
-.text{
+.text {
   color: var(--dark);
   font-size: 1.5rem;
   font-weight: 500;
@@ -507,7 +507,7 @@ nav .nav-links li a:hover {
   transition: 1s ease-in-out;
 }
 
- /* Testimonial Styling */ 
+/* Testimonial Styling */
 
 .testimonial-item {
   padding: 0em;
@@ -577,6 +577,177 @@ footer .social-media {
 footer .social-media a {
   font-size: 2rem;
   color: var(--white);
+  text-decoration: none;
+}
+
+/* login page */
+
+.login-bg {
+  background: linear-gradient(#33333392, #33333392),
+    url(./images/login/login-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.login-form {
+  width: max(25%,300px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 2em;
+  border-radius: 5px;
+}
+
+.login-form .heading-2 {
+  margin: 0em;
+  margin-bottom: 1em;
+}
+
+.login-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.login-form form input[type="text"],
+.login-form form input[type="password"] {
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 0.5em;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.login-form form input:hover,
+.login-form form input:focus {
+  border: 1px solid var(--primary-color);
+  box-shadow: 0px 0px 10px #005ca87a;
+  transition: 0.5s ease-in-out;
+}
+
+.login-form form button {
+  padding: 0.5em 2em;
+  font-size: 2rem;
+  font-weight: 700;
+  background-color: var(--primary-dark-color);
+  color: var(--white);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.login-form form button:hover {
+  background-color: var(--primary-color);
+}
+
+.login-form form p {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.login-form form a {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--primary-color);
+  text-decoration: underline;
+  transition: 0.5s linear;
+}
+
+.login-form form a:hover {
+  text-decoration: none;
+}
+
+/* Responsive Menu */
+
+.register-bg{
+  background: linear-gradient(#33333392, #33333392),
+    url(./images/registration/register-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.register-form {
+  width: max(30%, 300px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 2em;
+  border-radius: 5px;
+}
+
+.register-form h2 {
+  margin: 0em;
+  margin-bottom: 1em;
+}
+
+.register-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.register-form form label{
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--text-dark-color);
+}
+
+.register-form form input{
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 0.5em;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.register-form form input:hover,
+.register-form form input:focus {
+  border: 2px solid var(--primary-color);
+  box-shadow: 0px 0px 10px #005ca87a;
+  transition: 0.5s ease-in-out;
+}
+
+.register-form form button {
+  padding: 0.5em 2em;
+  font-size: 2rem;
+  font-weight: 700;
+  background-color: var(--primary-dark-color);
+  color: var(--white);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.register-form form button:hover {
+  background-color: var(--primary-color);
+}
+
+.register-form form p {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.register-form form a {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--primary-color);
+  text-decoration: underline;
+  transition: 0.5s linear;
+}
+
+.register-form form a:hover {
   text-decoration: none;
 }
 
