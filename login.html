@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flight | Login</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="login-bg">
+    <div class="login-form">
+      <h2 class="heading-2">Login</h2>
+
+      <form id="login-form">
+        <input
+          type="text"
+          id="username"
+          placeholder="Enter Your Username"
+          required
+        />
+        <input
+          type="password"
+          id="password"
+          placeholder="Enter Your Password"
+          required
+        />
+        <button type="submit">Login</button>
+        <p>Don't have an account? <a href="./register.html">Register</a></p>
+      </form>
+
+      <div id="error-message"></div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
