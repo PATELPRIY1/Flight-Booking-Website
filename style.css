@@ -612,8 +612,7 @@ footer .social-media a {
   gap: 1em;
 }
 
-.login-form form input[type="text"],
-.login-form form input[type="password"] {
+.login-form form input{
   width: 100%;
   font-size: 1.5rem;
   font-weight: 500;
@@ -623,8 +622,35 @@ footer .social-media a {
   border-radius: 5px;
 }
 
-.login-form form input:hover,
-.login-form form input:focus {
+.login-form form input:user-invalid:not(:placeholder-shown){
+  border-color: red;
+  box-shadow: 0px 0px 5px red;
+  background-image: url(./images/X-Mark-PNG-Picture.png);
+}
+
+.login-form form input:user-valid:not(:placeholder-shown){
+  border-color: green;
+  box-shadow: 0px 0px 5px rgb(1, 172, 1);
+  background-image: url(./images/kisspng-check-mark-scalable-vector-graphics-clip-art-circl-woocommerce-agentur-fr-wrzburg-amp-umgebung-1713904803144.webp);
+}
+
+.login-form form input:invalid:not(:placeholder-shown), 
+.login-form form input:valid:not(:placeholder-shown){
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: calc(100% - 10px);
+}
+
+.login-form form input:invalid:not(:placeholder-shown) + p{
+  color: red;
+}
+
+.login-form form input:focus:invalid{
+  outline-color: orange;
+  box-shadow: 0px 0px 10px orange;
+}
+
+.login-form form input:hover{
   border: 1px solid var(--primary-color);
   box-shadow: 0px 0px 10px #005ca87a;
   transition: 0.5s ease-in-out;
@@ -711,11 +737,38 @@ footer .social-media a {
   border-radius: 5px;
 }
 
-.register-form form input:hover,
-.register-form form input:focus {
+.register-form form input:hover{
   border: 2px solid var(--primary-color);
   box-shadow: 0px 0px 10px #005ca87a;
   transition: 0.5s ease-in-out;
+}
+
+.register-form form input:user-invalid:not(:placeholder-shown){
+  border-color: red;
+  box-shadow: 0px 0px 5px red;
+  background-image: url(./images/X-Mark-PNG-Picture.png);
+}
+
+.register-form form input:user-valid:not(:placeholder-shown){
+  border-color: green;
+  box-shadow: 0px 0px 5px rgb(1, 172, 1);
+  background-image: url(./images/kisspng-check-mark-scalable-vector-graphics-clip-art-circl-woocommerce-agentur-fr-wrzburg-amp-umgebung-1713904803144.webp);
+}
+
+.register-form form input:invalid:not(:placeholder-shown), 
+.register-form form input:valid:not(:placeholder-shown){
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: calc(100% - 10px);
+}
+
+.register-form form input:invalid:not(:placeholder-shown) + p{
+  color: red;
+}
+
+.register-form form input:focus:invalid{
+  outline-color: orange;
+  box-shadow: 0px 0px 10px orange;
 }
 
 .register-form form button {
