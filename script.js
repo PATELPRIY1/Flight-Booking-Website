@@ -27,3 +27,16 @@ function faq(ele){
     ele.parentElement.nextElementSibling.style.cssText = 'max-height: 500px;';
   }
 }
+
+const form = document.querySelector('form');
+const password = document.getElementById('password');
+const confirmPassword = document.getElementById('confirmationPassword');
+
+confirmPassword.addEventListener('input', () => {
+  if (confirmPassword.value !== password.value) {
+      confirmPassword.style.borderColor = 'red';
+  } else {
+      confirmPassword.style.borderColor = 'green';
+  }
+});
+
