@@ -12,17 +12,18 @@
 
       <form id="login-form">
         <input
-          type="text"
-          id="username"
-          placeholder="Enter Your Username"
-          required
+          type="email"
+          id="email" pattern="[A-Za-z0-9._+-]+@[A-Za-z0-9 -]+\.[a-z]{2,}"
+          placeholder="Enter Your Email"
+          required title="must be a valid email address"
         />
         <input
           type="password"
-          id="password"
+          id="password" pattern="[a-zA-Z0-9]{6,}"
           placeholder="Enter Your Password"
-          required
+          required minlength="6" title="Password must be at least 6 Character."
         />
+        <p>Password must be at least 6 Character.</p>
         <button type="submit">Login</button>
         <p>Don't have an account? <a href="./register.html">Register</a></p>
       </form>
