@@ -10,38 +10,74 @@
     <div class="register-form">
       <form action="register.php" method="post">
         <h2 class="heading-2">Flight Registration</h2>
+
+        <!-- Name Input -->
+        <label for="name">Full Name:</label>
         <input
           type="text"
           id="name"
           name="name"
+          pattern="[a-zA-Z]+"
           placeholder="Enter Your Name"
           required
+          title="Only letters allowed"
         />
 
+        <!-- Email Input -->
+        <label for="email">Email:</label>
         <input
           type="email"
           id="email"
           name="email"
+          pattern="[A-Za-z0-9._+-]+@[A-Za-z0-9 -]+\.[a-z]{2,}"
           placeholder="Enter Your Email"
+          required
+          title="Must be a valid email address"
+        />
+
+        <!-- Password Input -->
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          pattern="[a-zA-Z0-9]{6,}"
+          placeholder="Enter Your Password"
+          required
+          title="Password must be at least 6 characters."
+        />
+        <p>Password must be at least 6 characters.</p>
+
+        <!-- Confirm Password Input -->
+        <label for="confirmationPassword">Confirm Password:</label>
+        <input
+          type="password"
+          id="confirmationPassword"
+          name="confirmationPassword"
+          placeholder="Confirm Your Password"
           required
         />
 
+        <!-- Phone Number Input -->
+        <label for="phone">Phone Number:</label>
         <input
           type="tel"
           id="phone"
           name="phone"
-          placeholder="Enter Your Phone number"
+          pattern="\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}"
+          placeholder="Enter Your Phone Number"
           required
+          title="Enter a valid phone number"
         />
 
-        <input type="password" id="password" name="password" placeholder="Enter Your Password" readonly />
-    
-        <input type="confirm-password" id="confirmationPassword" name="confirmationPassword" placeholder="Enter Your Confirmation Password">
-
+        <!-- Date of Birth Input -->
         <label for="dob">Date of Birth:</label>
         <input type="date" id="dob" name="dob" required />
 
-        <button type="submit"> Submit </button>
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+
+        <!-- Login Link -->
         <p>Already have an Account? <a href="./login.html">Login</a></p>
       </form>
     </div>
